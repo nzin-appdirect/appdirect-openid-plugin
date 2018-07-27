@@ -62,7 +62,7 @@ public class TeamsExtension extends OpenIdExtension {
 
         TeamExtensionRequest req = new TeamExtensionRequest();
         Collection<String> groups = Hudson.getInstance().getAuthorizationStrategy().getGroups();
-        req.setQueryMembership(groups);
+//        req.setQueryMembership(groups);
         authRequest.addExtension(req);
 
         if (LOGGER.isLoggable(Level.FINE)) {
